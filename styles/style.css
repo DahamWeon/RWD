@@ -218,7 +218,7 @@ input[type="search"] {
 }
 
 .board__title {
-  flex: 1 1 0;
+  flex: 1 1 auto;
 }
 
 .board__list {
@@ -227,6 +227,7 @@ input[type="search"] {
   display: flex;
   flex-flow: column nowrap;
   gap: var(--spacing-sm);
+  width: 100%;
 }
 
 .board__item {
