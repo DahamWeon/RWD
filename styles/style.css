@@ -214,6 +214,7 @@ input[type="search"] {
   grid-area: board;
   display: flex;
   flex-flow: row wrap;
+  background-color: yellow;
 }
 
 .board__title {
@@ -234,14 +235,19 @@ input[type="search"] {
 }
 
 .board__link {
-  flex: 1 1 auto;
-  white-space: nowrap;
+  flex: 0 1 auto;
+  /* white-space: nowrap; */
   overflow: hidden;
   text-overflow: ellipsis;
+  width: calc(100% - 6.25rem);
+  background-color: pink;
 }
 
 .board__date {
   flex: 0 0 auto;
+  width: 6.25rem;
+  text-align: right;
+  background-color: lightblue;
 }
 
 .board__more {
